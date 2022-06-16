@@ -18,3 +18,18 @@ mlr({
     countryCodes: true,
     countryCodeData: mlCodes,
 });
+
+var messageArray = ["Typewriter Effect"];
+var textPosition= 0;
+var speed = 100;
+
+typewriter = () => {
+    document.querySelector("").
+    innerHTML = messageArray[0].substring(0, textPosition) + "<span>\u25ae</span>";
+
+    if(textPosition++ != messageArray[0].length)
+    setTimeout(typewriter, speed);
+    
+}
+
+window.addEventListener("load", typewriter);
