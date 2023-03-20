@@ -2,16 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="icon" type="image/x-icon" href="./imgs/gkfav1.png">
+        <link rel="icon" type="image/x-icon" href="./my-app/components/imgs/GKfav1.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gabriel Klippel | Developer</title>
+        <script src="./index.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./style.css">
 
     </head>
     <body>
@@ -20,7 +21,7 @@
         
         <header>
             <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
+                <span class="hamburger-icon"></span>
             </button>
             <nav class="nav">
                 <ul class="nav__list">
@@ -38,7 +39,7 @@
                 Hi, I am <strong>Gabriel Klippel</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">Web Developer</p>
-            <img src="imgs/gk1.jpg" alt="a picture of me standing" 
+            <img src="./my-app/components/imgs/gk1.jpg" alt="a picture of me standing" 
             height="280px" 
             
             
@@ -86,7 +87,8 @@
         <section class="about-me" id="about">
            <h2 class="section__title section__title--about">Who I am</h2>
            <p class="section__subtitle section__subtitle--about"> developer based in Brazil</p>
-           
+           <button class="language-switcher">Change language</button>
+
            <div class="about-me__body">
                <p>Fully committed to the philosophy of life-long learning, I’m a full stack developer with a deep passion for JavaScript, React and all things web development. </p>
                 <p>The unique combination of creativity, logic, technology and never running out of new things to discover, drives my excitement and passion for web development. </p>
@@ -94,7 +96,7 @@
             </div>
 
            
-           <img src="imgs/gk.jpg" alt="random " class="about-me__img">
+           <img src="./my-app/components/imgs/gk.jpg" alt="random " class="about-me__img">
         </section>
         
         <!-- My Work -->
@@ -105,27 +107,27 @@
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
                 <a href="./porfolio-item1.html" class="portfolio__item">
-                    <img src="imgs/store.jpg" alt="" class="portfolio__img">
+                    <img src="/my-app/components/imgs/store.jpg" alt="" class="portfolio__img">
                     
                 </a>
                 
                 <!-- Portfolio item 02 -->
                 <a href="https://doctorcarekl1ppel.netlify.app/" class="portfolio__item">
-                    <img src="imgs/doctor.jpg" alt="" class="portfolio__img"
+                    <img src="/my-app/components/imgs/doctor.jpg" alt="" class="portfolio__img"
                     >
                 </a>
                 
                 <!-- Portfolio item 03 -->
                 <a href="#work" class="portfolio__item">
-                    <img src="imgs/soon.jpg" alt="" class="portfolio__img">
+                    <img src="/my-app/components/imgs/soon.jpg" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 04 -->
                 <a href="#work" class="portfolio__item">
-                    <img src="imgs/soon.jpg" alt="" class="portfolio__img">
+                    <img src="/my-app/components/imgs/soon.jpg" alt="" class="portfolio__img">
                 
                 <a href="#work" class="portfolio__item">
-                    <img src="imgs/soon.jpg" alt="" class="portfolio__img">
+                    <img src="/my-app/components/imgs/soon.jpg" alt="" class="portfolio__img">
 
                
             </div>
@@ -150,9 +152,7 @@
                 </li>
             </ul>
         </footer>
-        
-        
-        <script src="js/index.js"></script>
+    
         
     </body>
 </html>
