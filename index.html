@@ -5,7 +5,7 @@
         <link rel="icon" type="image/x-icon" href="./my-app/components/imgs/GKfav1.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gabriel Klippel | Developer</title>
-        <script src="./index.js"></script>
+        <script src="./js/index.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
@@ -20,6 +20,13 @@
         </select>
         
         <header>
+            
+            <div class="hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+              </div>
+            
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger-icon"></span>
             </button>
@@ -30,15 +37,26 @@
                     <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
                 </ul>
+            
+                <nav class="menu">
+                    <ul class="menu__list">
+                      <li class="menu__item"><a href="#services">Meus serviços</a></li>
+                      <li class="menu__item"><a href="#about">Sobre mim</a></li>
+                      <li class="menu__item"><a href="#work">Meus projetos</a></li>
+                      <li class="menu__item"><a href="#contact">Contato</a></li>
+                    </ul>
+                  </nav>
+            
+            
             </nav>
         </header>
         
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Gabriel Klippel</strong>
+                Olá, eu sou <strong>Gabriel Klippel</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Web Developer</p>
+            <p class="section__subtitle section__subtitle--intro">Desenvolvedor WEB</p>
             <img src="./my-app/components/imgs/gk1.jpg" alt="a picture of me standing" 
             height="280px" 
             
@@ -48,61 +66,39 @@
         
         
         <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>BACKEND</h3>
-                    <p>mySQL
-                    <p>APIs(REST & SOAP)
-                    <p>Agile | Git
+        <section class="my-services" id="services"> <h2 class="section__title section__title--services">Meus serviços</h2> <div class="services"> <div class="service"> <h3>Desenvolvimento de Backend</h3> <p>Gerenciamento de banco de dados mySQL</p> <p>Desenvolvimento de APIs (REST & SOAP)</p> <p>Metodologia ágil e sistema de controle de versão Git</p> </div> <!-- / service -->
 
-    
-                </div> <!-- / service -->
-                
-                
-                <div class="service">
-                    <h3>Misc</h3>
-                    <p>Pentest</p>
-                    <p>Testing/Debugging</p>
-                    <p>Command Line(powershell and bash)</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>FRONTEND</h3>
-                    <p> HTML | CSS | javascript
-                    </p>
-                    <p> ReactJS
-                    <p>Sass
-
-
-                </div> <!-- / service -->
-            </div> <!-- / services -->
+            <div class="service">
+                <h3>Segurança e Testes</h3>
+                <p>Auditoria de segurança pentest</p>
+                <p>Testes e depuração de software</p>
+                <p>Conhecimento avançado de linha de comando (powershell e bash)</p>
+            </div> <!-- / service -->
             
-            <a href="#work" class="btn">My Projects</a>
-        </section>
+            <div class="service">
+                <h3>Desenvolvimento de Frontend</h3>
+                <p>Desenvolvimento de páginas web com HTML, CSS e JavaScript</p>
+                <p>Experiência em ReactJS</p>
+                <p>Conhecimento de Sass</p>
+            </div> <!-- / service -->
+        </div> <!-- / services -->
         
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about"> developer based in Brazil</p>
-           <button class="language-switcher">Change language</button>
+        <!-- Sobre mim --> <section class="about-me" id="about"> <h2 class="section__title section__title--about">Sobre mim</h2> <p class="section__subtitle section__subtitle--about">Desenvolvedor Full Stack com sede no Brasil</p>
 
-           <div class="about-me__body">
-               <p>Fully committed to the philosophy of life-long learning, I’m a full stack developer with a deep passion for JavaScript, React and all things web development. </p>
-                <p>The unique combination of creativity, logic, technology and never running out of new things to discover, drives my excitement and passion for web development. </p>
-                <p>When I’m not at my computer I like to spend my time reading, drawing and talking with my friends.</p>
-            </div>
+<div class="about-me__body">
+    <p>Olá, meu nome é Gabriel, e sou um desenvolvedor Full Stack com experiência em várias tecnologias. Minha paixão por tecnologia e desenvolvimento de software me levou a aprender constantemente e aprimorar minhas habilidades.</p>
+    <p>Em minha carreira, trabalhei em vários projetos, desde pequenas aplicações até grandes sistemas corporativos. Tenho experiência em linguagens como JavaScript, Python e Java, bem como em frameworks como React, Spring e Django. Também tenho conhecimento em bancos de dados relacionais e ferramentas de controle de versão, como Git.</p>
+    <p>Estou sempre procurando novos desafios e oportunidades de aprendizado, e acredito que a colaboração e a comunicação são fundamentais para o sucesso de qualquer projeto. Quando não estou trabalhando, gosto de ler sobre tecnologia, arte e ciência, bem como praticar atividades físicas e passar tempo com amigos e família.</p>
+</div>
 
-           
-           <img src="./my-app/components/imgs/gk.jpg" alt="random " class="about-me__img">
-        </section>
+<img src="./my-app/components/imgs/gk.jpg" alt="eu" class="about-me__img">
+
+</section>
         
         <!-- My Work -->
         <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My Projects</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my projects</p>
+            <h2 class="section__title section__title--work">Meus Projetos</h2>
+            <p class="section__subtitle section__subtitle--work">Uma seleção de alguns de meus projetos</p>
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
@@ -137,11 +133,15 @@
         <!-- Footer -->
         <footer class="footer">
             <!-- email adress -->
+            <a href="mailto:gabrielkklippel@outlook.com" class="contact__email">
+                <i class="fas fa-envelope"></i> Enviar e-mail
+              </a>
             <p></p>
             <ul class="social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://www.linkedin.com/in/gbk1/">
-                        <i class="fa fa-linkedin" aria-hidden="true">Linkedin</i>
+                        <i class="fa fa-linkedin">
+                        Linkedin</i>
                     </a>
                 </li>
                 <li class="social-list__item">
