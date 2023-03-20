@@ -71,6 +71,7 @@
 
 /* General styles */
 
+
 .contact__email {
     display: block;
     margin-bottom: 20px;
@@ -382,7 +383,7 @@ span{
     .about-me {
         background-color: #161515; 
         padding: 1px 0;
-        border: 4.5px solid #111111;
+        border: .5px solid #111111;
         
         display: grid;
         grid-template-columns: 100fr 200px;
