@@ -26,6 +26,15 @@
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
+.soon {
+    height: 300px;
+    width: 1000px;
+    object-fit: cover;
+    border: 5px solid #252525
+
+}
+
+
 .my-work {
     margin-top: 80px;
     margin-bottom: 80px;
